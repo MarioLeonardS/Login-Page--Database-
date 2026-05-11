@@ -8,6 +8,8 @@ function App() {
   const [showPassword, setShowPassword] = useState(false);
 
   // 2. Fungsi saat tombol login diklik
+
+
   const handleSubmit = (e) => {
     e.preventDefault(); // Mencegah halaman refresh otomatis
     
@@ -15,8 +17,13 @@ function App() {
     console.log("Data siap dikirim ke Backend:");
     console.log("Email:", email);
     console.log("Password:", password);
-
-    alert(`Welcome Back, ${email}`);
+    const username = "Mario Leonard Salim";
+    if (email === "mario.leonard01808@gmail.com") {
+      alert(`Welcome Back, ${username}`);
+    }
+    else {
+      alert(`Welcome Back, ${email}`)
+    }
   };
 
   const toggleShowPassword = () => {
